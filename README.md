@@ -13,8 +13,10 @@ Powinności kodu:
   * instrukcja zmiany aktualnie wybranego elementu
   * instrukcja usuwania aktualnie wybranego elementu
 ## Narzędzia
+```
 Język programowania: C
 Wersja języka: C11
 Kompilator: gcc
 Automatyzator Procesu Budowania Programu: Cmake
 Narzędzie Kontroli Wersji: git
+```
