@@ -2,14 +2,20 @@
 #include "../include/doubly-linked-list.h"
 
 int main(void){
-	Node * head = create_node(90);
-	Node * next = create_node(100);
-	link_node(head, next);
-	Node * last = find_last_node(head);
-	printf("Last value: %d\n", last->dummy_data);
-	Node * first = find_first_node(last);
-	printf("First value: %d\n", first->dummy_data);
-	delete_node(head);
-	delete_node(next);
+	Node * node1 = create_node(1);
+	Node * node2 = create_node(2);
+	Node * node3 = create_node(3);
+	Node * node4 = create_node(4);
+
+	append_node(node1, node2);
+	append_node(node1, node3);
+	append_node(node1, node4);
+
+	print_list(node3);
+
+	delete_node(node1);
+	delete_node(node2);
+	delete_node(node3);
+	delete_node(node4);
 	return 0;
 }

@@ -2,6 +2,7 @@
 #define DOUBLY_LINKED_LIST_H
 
 #include <stdlib.h>
+#include <stdio.h>
 
 typedef struct Node {
 	struct Node * previous_node;
@@ -14,5 +15,7 @@ void delete_node(Node * node);
 void link_node(Node * current_node, Node * additional);
 Node * find_last_node(Node * current_node);
 Node * find_first_node(Node * current_node);
+void append_node(Node * current_node, Node * additional);
+void print_list(Node * current_node);
 
 #endif
