@@ -7,6 +7,8 @@ int main(void){
 	link_node(head, next);
 	printf("First value: %d\n",head->dummy_data);
 	printf("Second value: %d\n",head->next_node->dummy_data);
+	Node * last = find_last_node(head);
+	printf("Last value: %d\n", last->dummy_data);
 	delete_node(head);
 	delete_node(next);
 	return 0;
