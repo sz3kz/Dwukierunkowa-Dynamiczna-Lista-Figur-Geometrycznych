@@ -11,5 +11,6 @@ typedef struct Node {
 
 Node * create_node(int dummy_data);
 void delete_node(Node * node);
+void link_node(Node * current_node, Node * extra);
 
 #endif
