@@ -10,5 +10,6 @@ typedef struct Node {
 } Node;
 
 Node * create_node(int dummy_data);
+void delete_node(Node * node);
 
 #endif
