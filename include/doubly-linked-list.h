@@ -13,5 +13,6 @@ Node * create_node(int dummy_data);
 void delete_node(Node * node);
 void link_node(Node * current_node, Node * additional);
 Node * find_last_node(Node * current_node);
+Node * find_first_node(Node * current_node);
 
 #endif
