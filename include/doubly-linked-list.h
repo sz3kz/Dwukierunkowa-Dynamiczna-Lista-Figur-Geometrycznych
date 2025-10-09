@@ -18,5 +18,6 @@ Node * find_first_node(Node * current_node);
 void append_node(Node * current_node, Node * additional);
 void print_list(Node * current_node);
 void delete_list(Node * current_node);
+void append_element(Node * current_node, int dummy_data);
 
 #endif
