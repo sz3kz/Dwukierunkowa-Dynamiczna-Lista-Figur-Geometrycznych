@@ -12,10 +12,7 @@ int main(void){
 	append_node(node1, node4);
 
 	print_list(node3);
+	delete_list(node2);
 
-	delete_node(node1);
-	delete_node(node2);
-	delete_node(node3);
-	delete_node(node4);
 	return 0;
 }
