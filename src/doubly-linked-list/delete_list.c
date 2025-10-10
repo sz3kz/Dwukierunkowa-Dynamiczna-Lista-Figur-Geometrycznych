@@ -1,11 +1,14 @@
 #include "../../include/doubly-linked-list.h"
 
-void delete_list(Node * current_node){
-	current_node = find_first_node(current_node);
-	while (current_node->next_node != NULL){
-		current_node = current_node->next_node;
-		delete_node(current_node->previous_node);
-		current_node->previous_node = NULL;
+void delete_list(Node * head){
+	/* 
+	Although i could use any node, i will explicitely handle the first node
+	Adhering to the KISS principle.
+	*/
+	while (head->next_node != NULL){
+		head= head->next_node;
+		delete_node(head->previous_node);
+		head->previous_node = NULL;
 	}
-	free(current_node);
+	free(head);
 }
