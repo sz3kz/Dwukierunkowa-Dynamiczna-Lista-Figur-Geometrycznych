@@ -1,11 +1,11 @@
 #include "../../include/doubly-linked-list.h"
 
-void prepend_node(Node * current_node, Node * additional){
-	Node * previous_node = current_node->previous_node;
-	if (previous_node != NULL) previous_node->next_node = additional;
+void prepend_node(Node * current, Node * new){
+	Node * previous = current->previous_node;
+	if (previous != NULL) previous->next_node = new;
 
-	current_node->previous_node = additional;
+	current->previous_node = new;
 
-	additional->previous_node = previous_node;
-	additional->next_node = current_node;
+	new->previous_node = previous;
+	new->next_node = current;
 }
