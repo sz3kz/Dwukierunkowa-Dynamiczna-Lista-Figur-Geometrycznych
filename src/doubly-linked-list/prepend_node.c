@@ -1,4 +1,3 @@
-
 #include "../../include/doubly-linked-list.h"
 
 void prepend_node(Node * current_node, Node * additional){
