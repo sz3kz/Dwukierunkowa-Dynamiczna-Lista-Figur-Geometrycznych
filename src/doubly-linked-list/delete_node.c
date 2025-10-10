@@ -1,5 +1,5 @@
 #include "../../include/doubly-linked-list.h"
 
-void delete_node(Node * node){
-	free(node);
+void delete_node(Node * current){
+	free(current);
 }
