@@ -14,7 +14,7 @@ Node * create_node(int dummy_data);
 void delete_node(Node * current);
 void print_node(Node * current);
 
-void append_node(Node * current_node, Node * additional);
+void append_node(Node * current, Node * new);
 void prepend_node(Node * current_node, Node * additional);
 
 void delete_list(Node * current);

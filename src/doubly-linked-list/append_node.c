@@ -1,11 +1,11 @@
 #include "../../include/doubly-linked-list.h"
 
-void append_node(Node * current_node, Node * additional){
-	Node * next_node = current_node->next_node;
-	if (next_node != NULL) next_node->previous_node = additional;
+void append_node(Node * current, Node * new){
+	Node * next = current->next_node;
+	if ( next != NULL) next->previous_node = new;
 
-	current_node->next_node = additional;
+	current->next_node = new;
 
-	additional->next_node = next_node;
-	additional->previous_node = current_node;
+	new->next_node = next;
+	new->previous_node = current;
 }
