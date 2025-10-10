@@ -21,8 +21,6 @@ Node * find_last_node(Node * current);
 Node * find_first_node(Node * current);
 
 void delete_list(Node * current);
-
 void print_list(Node * current);
-void append_element(Node * current_node, int dummy_data);
 
 #endif
