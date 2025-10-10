@@ -5,10 +5,10 @@ void print_list(Node * current){
 		printf("List does not exist - no elements found!\n");
 		return;
 	}
-	current = find_first_node(current);
-	while (current->next != NULL){
-		print_node(current);
-		current = current->next;
+	Node * iterator = find_first_node(current);
+	while (iterator->next != NULL){
+		print_node(iterator, iterator == current);
+		iterator = iterator->next;
 	}
-	print_node(current);
+	print_node(iterator, iterator == current);
 }

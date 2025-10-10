@@ -3,6 +3,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdbool.h>
 
 typedef struct Node {
 	struct Node * prev;
@@ -12,7 +13,7 @@ typedef struct Node {
 
 Node * create_node(int data);
 void delete_node(Node * current, Node ** current_ptr);
-void print_node(Node * current);
+void print_node(Node * node, bool is_current);
 
 void append_node(Node * current, Node * new);
 void prepend_node(Node * current, Node * new);
