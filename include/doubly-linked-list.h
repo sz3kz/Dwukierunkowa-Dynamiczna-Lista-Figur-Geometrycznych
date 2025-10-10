@@ -17,7 +17,7 @@ void print_node(Node * current);
 void append_node(Node * current_node, Node * additional);
 void prepend_node(Node * current_node, Node * additional);
 
-void delete_list(Node * head);
+void delete_list(Node * current);
 
 void link_node(Node * current_node, Node * additional);
 Node * find_last_node(Node * current_node);
