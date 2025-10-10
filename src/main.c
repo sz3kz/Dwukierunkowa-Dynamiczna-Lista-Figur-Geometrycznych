@@ -2,7 +2,8 @@
 #include "../include/doubly-linked-list.h"
 
 int main(void){
-	Node * current = NULL; //create_node(0);
+	Node * current = create_node(0);
+	delete_node(current, &current);
 	/*
 	prepend_node(current, create_node(1));
 	prepend_node(current, create_node(2));

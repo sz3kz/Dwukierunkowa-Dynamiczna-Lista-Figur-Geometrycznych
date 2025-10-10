@@ -11,7 +11,7 @@ typedef struct Node {
 } Node;
 
 Node * create_node(int data);
-void delete_node(Node * current);
+void delete_node(Node * current, Node ** current_ptr);
 void print_node(Node * current);
 
 void append_node(Node * current, Node * new);
