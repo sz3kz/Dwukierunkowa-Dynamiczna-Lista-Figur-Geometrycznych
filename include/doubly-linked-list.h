@@ -11,13 +11,18 @@ typedef struct Node {
 } Node;
 
 Node * create_node(int dummy_data);
-void delete_node(Node * node);
+void delete_node(Node * current);
+void print_node(Node * current);
+
+void append_node(Node * current_node, Node * additional);
+void prepend_node(Node * current_node, Node * additional);
+
+void delete_list(Node * head);
+
 void link_node(Node * current_node, Node * additional);
 Node * find_last_node(Node * current_node);
 Node * find_first_node(Node * current_node);
-void append_node(Node * current_node, Node * additional);
 void print_list(Node * current_node);
-void delete_list(Node * current_node);
 void append_element(Node * current_node, int dummy_data);
 
 #endif
