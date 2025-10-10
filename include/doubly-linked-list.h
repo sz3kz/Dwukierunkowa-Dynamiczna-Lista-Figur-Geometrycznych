@@ -17,10 +17,11 @@ void print_node(Node * current);
 void append_node(Node * current, Node * new);
 void prepend_node(Node * current, Node * new);
 
+Node * find_last_node(Node * current);
+Node * find_first_node(Node * current);
+
 void delete_list(Node * current);
 
-Node * find_last_node(Node * current);
-Node * find_first_node(Node * current_node);
 void print_list(Node * current);
 void append_element(Node * current_node, int dummy_data);
 
