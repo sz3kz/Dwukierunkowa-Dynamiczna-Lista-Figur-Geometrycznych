@@ -10,5 +10,5 @@ void delete_list(Node * head){
 		delete_node(head->previous_node);
 		head->previous_node = NULL;
 	}
-	free(head);
+	delete_node(head);
 }
