@@ -2,9 +2,9 @@
 
 void print_list(Node * current){
 	current = find_first_node(current);
-	while (current->next_node != NULL){
+	while (current->next != NULL){
 		print_node(current);
-		current = current->next_node;
+		current = current->next;
 	}
 	print_node(current);
 }

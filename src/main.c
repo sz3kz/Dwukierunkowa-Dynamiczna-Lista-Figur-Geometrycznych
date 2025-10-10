@@ -2,16 +2,18 @@
 #include "../include/doubly-linked-list.h"
 
 int main(void){
-	Node * head = create_node(2);
-	Node * node1 = create_node(1);
-	Node * node2 = create_node(3);
-	prepend_node(head, node1);
-	append_node(head, node2);
-	//prepend_node(head, create_node(3));
-	//prepend_node(head, create_node(4));
+	Node * current = create_node(0);
+	prepend_node(current, create_node(1));
+	prepend_node(current, create_node(2));
+	prepend_node(current, create_node(3));
+	append_node(current, create_node(10));
+	append_node(current, create_node(11));
+	append_node(current, create_node(12));
+	//prepend_node(current, create_node(3));
+	//prepend_node(current, create_node(4));
 
-	print_list(head);
-	delete_list(head);
+	print_list(current);
+	delete_list(current);
 
 	return 0;
 }

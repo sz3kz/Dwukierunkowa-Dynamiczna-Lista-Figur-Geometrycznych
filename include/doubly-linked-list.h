@@ -5,12 +5,12 @@
 #include <stdio.h>
 
 typedef struct Node {
-	struct Node * previous_node;
-	struct Node * next_node;
-	int dummy_data;
+	struct Node * prev;
+	struct Node * next;
+	int data;
 } Node;
 
-Node * create_node(int dummy_data);
+Node * create_node(int data);
 void delete_node(Node * current);
 void print_node(Node * current);
 
