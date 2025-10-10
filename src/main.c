@@ -6,7 +6,7 @@ int main(void){
 	Node * node1 = create_node(1);
 	Node * node2 = create_node(3);
 	prepend_node(head, node1);
-	prepend_node(head, node2);
+	append_node(head, node2);
 	//prepend_node(head, create_node(3));
 	//prepend_node(head, create_node(4));
 
