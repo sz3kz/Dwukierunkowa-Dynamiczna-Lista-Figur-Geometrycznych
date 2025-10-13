@@ -4,11 +4,13 @@
 #include "../include/interractive.h"
 
 int main(void){
+	Node * current = NULL;
+	char option;
 	while (1){
 		system("clear");
 		show_options_usage();
 
-		char option = get_option();
+		option = get_option();
 		system("clear");
 
 		switch(option){
