@@ -17,6 +17,6 @@ Powinności kodu:
 Język programowania: C
 Wersja języka: C11
 Kompilator: gcc
-Automatyzator Procesu Budowania Programu: Cmake
+Automatyzator Procesu Budowania Programu: make
 Narzędzie Kontroli Wersji: git
 ```
