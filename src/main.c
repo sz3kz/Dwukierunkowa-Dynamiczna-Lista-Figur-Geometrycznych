@@ -6,6 +6,10 @@
 int main(void){
 	Node * current = NULL;
 	char option;
+	char * name;
+	double area;
+	double perimeter;
+	GeometricShape * shape;
 	while (1){
 		system("clear");
 		print_list(current);
@@ -17,15 +21,21 @@ int main(void){
 		switch(option){
 			case 'a':
 				puts("You chose to append a new node.");
-				char * name = get_name();
-				double area = get_area();
-				double perimeter = get_perimeter();
-				GeometricShape * shape = create_geometric_shape(name,area,perimeter);
+				name = get_name();
+				area = get_area();
+				perimeter = get_perimeter();
+				shape = create_geometric_shape(name,area,perimeter);
 				if (current == NULL) current = create_node(shape);
 				else append_node(current, create_node(shape));
 				break;
 			case 'p':
 				puts("You chose to prepend a new node.");
+				name = get_name();
+				area = get_area();
+				perimeter = get_perimeter();
+				shape = create_geometric_shape(name,area,perimeter);
+				if (current == NULL) current = create_node(shape);
+				else prepend_node(current, create_node(shape));
 				break;
 			case 'd':
 				puts("You chose to delete the current node.");
