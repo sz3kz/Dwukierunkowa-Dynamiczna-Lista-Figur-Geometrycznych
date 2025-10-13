@@ -2,7 +2,7 @@
 
 void print_list(Node * current){
 	if (current == NULL){
-		printf("[List has no elements]\n");
+		printf("[List has no nodes]\n");
 		return;
 	}
 	Node * iterator = find_first_node(current);
