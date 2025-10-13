@@ -53,9 +53,6 @@ int main(void){
 				puts("Option error.");
 				return 0;
 		}
-
-		printf("Press any key to continue...");
-		while (getchar() != '\n');
 	}
 	return 0;
 }
