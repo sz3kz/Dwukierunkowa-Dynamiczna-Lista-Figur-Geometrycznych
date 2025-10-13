@@ -20,7 +20,6 @@ void print_node(Node * node, bool is_current);
 void append_node(Node * current, Node * new);
 void prepend_node(Node * current, Node * new);
 
-Node * find_last_node(Node * current);
 Node * find_first_node(Node * current);
 
 void delete_list(Node * current);
