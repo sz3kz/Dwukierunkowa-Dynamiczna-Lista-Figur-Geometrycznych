@@ -9,5 +9,6 @@
 #define INVALID_OPTION_MESSAGE "Sorry, option is invalid!\n"
 
 char get_option(void);
+void show_options_usage(void);
 
 #endif
