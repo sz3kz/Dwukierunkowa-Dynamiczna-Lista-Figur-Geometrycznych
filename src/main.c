@@ -1,17 +1,15 @@
 #include "../include/main.h"
 #include "../include/doubly-linked-list.h"
+#include "../include/geometric-shape-struct.h"
 
 int main(void){
-	Node * current = create_node(0);
-	prepend_node(current, create_node(1));
-	prepend_node(current, create_node(2));
-	prepend_node(current, create_node(3));
-	append_node(current, create_node(10));
-	append_node(current, create_node(11));
-	append_node(current, create_node(12));
-
-	print_list(current);
-	delete_list(current);
+	GeometricShape * shape = malloc(sizeof(GeometricShape));
+	shape->name = "Kwadrat";
+	shape->area = 20;
+	shape->perimeter= 40;
+	printf("Shape\'s name: %s\n",shape->name);
+	printf("Shape\'s area: %lf\n",shape->area);
+	printf("Shape\'s perimeter: %lf\n",shape->perimeter);
 
 	return 0;
 }
