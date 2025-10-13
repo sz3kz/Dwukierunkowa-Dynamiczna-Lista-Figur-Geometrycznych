@@ -5,5 +5,6 @@ char * get_name(void){
 	printf("Name");
 	printf("%s", INPUT_PROMPT);
 	fgets(name, NAME_MAXSIZE, stdin);
+	newline2null(name);
 	return name;
 }

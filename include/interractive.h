@@ -17,5 +17,6 @@ GeometricShape * get_geometric_data(void);
 char * get_name(void);
 double get_area(void);
 double get_perimeter(void);
+void newline2null(char * string);
 
 #endif
