@@ -6,6 +6,7 @@ char get_option(void){
 	while (1){
 		printf("%s", INPUT_PROMPT);
 		option = getchar();
+		while(getchar() != '\n');
 		for (int iterator = 0; VALID_OPTIONS[iterator] != 0; ++iterator){
 			if (option == VALID_OPTIONS[iterator]){
 				is_valid = 1;
