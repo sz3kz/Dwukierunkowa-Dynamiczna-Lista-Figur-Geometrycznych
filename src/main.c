@@ -6,8 +6,32 @@
 int main(void){
 	system("clear");
 	show_options_usage();
+
 	char option = get_option();
 	system("clear");
-	printf("Selected option: %c\n",option);
+
+	switch(option){
+		case 'a':
+			puts("You chose to append a new node.");
+			break;
+		case 'p':
+			puts("You chose to prepend a new node.");
+			break;
+		case 'd':
+			puts("You chose to delete the current node.");
+			break;
+		case 'n':
+			puts("You chose to select the next node.");
+			break;
+		case 'b':
+			puts("You chose to select the node before.");
+			break;
+		case 'x':
+			puts("You chose to exit the program.");
+			return 0;
+		default:
+			puts("Option error.");
+			return 0;
+	}
 	return 0;
 }
