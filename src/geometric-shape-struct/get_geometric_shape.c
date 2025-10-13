@@ -1,13 +1,6 @@
 #include "../../include/geometric-shape-struct.h"
 #include "../../include/interractive.h"
 
-char * get_geometric_shape_name(void){
-	char * name = malloc(sizeof(char) * NAME_MAXSIZE);
-	printf("Name");
-	printf("%s", INPUT_PROMPT);
-	fgets(name, NAME_MAXSIZE, stdin);
-	return name;
-}
 double get_geometric_shape_area(void){
 	double area;
 	while (1){
