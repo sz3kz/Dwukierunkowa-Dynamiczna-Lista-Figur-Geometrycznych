@@ -5,6 +5,7 @@
 
 int main(void){
 	Node * current = NULL;
+	Node * tmp;
 	char option;
 	char * name;
 	double area;
@@ -39,6 +40,13 @@ int main(void){
 				break;
 			case 'd':
 				puts("You chose to delete the current node.");
+				tmp = NULL;
+				if (current->next != NULL) tmp = current->next;
+				else if (current->prev != NULL) tmp = current->prev;
+				puts("Before");
+				delete_node(current, &current);
+				puts("After");
+				current = tmp;
 				break;
 			case 'n':
 				puts("You chose to select the next node.");
