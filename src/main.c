@@ -8,6 +8,7 @@ int main(void){
 	char option;
 	while (1){
 		system("clear");
+		print_list(current);
 		show_options_usage();
 
 		option = get_option();
@@ -16,6 +17,12 @@ int main(void){
 		switch(option){
 			case 'a':
 				puts("You chose to append a new node.");
+				char * name = get_geometric_shape_name();
+				double area = get_geometric_shape_area();
+				double perimeter = get_geometric_shape_perimeter();
+				GeometricShape * shape = create_geometric_shape(name,area,perimeter);
+				if (current == NULL) current = create_node(shape);
+				else append_node(current, create_node(shape));
 				break;
 			case 'p':
 				puts("You chose to prepend a new node.");
