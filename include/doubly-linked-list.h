@@ -10,7 +10,7 @@
 typedef struct Node {
 	struct Node * prev;
 	struct Node * next;
-	GeometricShape data;
+	GeometricShape * data;
 } Node;
 
 Node * create_node(GeometricShape * data);

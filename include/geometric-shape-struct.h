@@ -9,5 +9,6 @@ typedef struct GeometricShape {
 	double perimeter;
 } GeometricShape;
 GeometricShape * create_geometric_shape(char * name, double area, double perimeter);
+void delete_geometric_shape(GeometricShape * shape);
 
 #endif
