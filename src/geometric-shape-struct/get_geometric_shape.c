@@ -10,17 +10,25 @@ char * get_geometric_shape_name(void){
 }
 double get_geometric_shape_area(void){
 	double area;
-	printf("Area");
-	printf("%s", INPUT_PROMPT);
-	scanf("%lf", &area);
+	while (1){
+		printf("Area");
+		printf("%s", INPUT_PROMPT);
+		scanf("%lf", &area);
+		if (area > 0) break;
+		printf("Area must be a positive double value!\n");
+	}
 	return area;
 }
 
 double get_geometric_shape_perimeter(void){
 	double perimeter;
-	printf("Perimeter");
-	printf("%s", INPUT_PROMPT);
-	scanf("%lf", &perimeter);
+	while (1){
+		printf("Perimeter");
+		printf("%s", INPUT_PROMPT);
+		scanf("%lf", &perimeter);
+		if (perimeter> 0) break;
+		printf("Perimeter must be a positive double value!\n");
+	}
 	return perimeter;
 }
 
