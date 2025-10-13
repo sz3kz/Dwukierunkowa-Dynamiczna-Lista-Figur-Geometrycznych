@@ -42,9 +42,13 @@ int main(void){
 				break;
 			case 'n':
 				puts("You chose to select the next node.");
+				if (current->next != NULL) current = current->next;
+				else puts("There exists no next node.");
 				break;
 			case 'b':
 				puts("You chose to select the node before.");
+				if (current->prev != NULL) current = current->prev;
+				else puts("There exists no node before this one.");
 				break;
 			case 'x':
 				puts("You chose to exit the program.");
