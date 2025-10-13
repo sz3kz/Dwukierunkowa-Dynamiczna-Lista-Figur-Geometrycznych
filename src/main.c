@@ -12,7 +12,7 @@ int main(void){
 	double perimeter;
 	GeometricShape * shape;
 	while (1){
-		//system("clear");
+		system("clear");
 		print_list(current);
 		show_options_usage();
 
@@ -49,15 +49,10 @@ int main(void){
 						tmp = current->prev;
 					}
 				}
-				//puts("Before");
-				//printf("current: %p\n",current);
-				//printf("tmp: %p\n",tmp);
+
 				delete_node(current, &current);
-				//puts("After");
-				//printf("current: %p\n",current);
-				//printf("tmp: %p\n",tmp);
 				current = tmp;
-				//printf("Final: current: %p\n",current);
+
 				break;
 			case 'n':
 				puts("You chose to select the next node.");
