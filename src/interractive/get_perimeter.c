@@ -1,6 +1,6 @@
 #include "../../include/interractive.h"
 
-double get_geometric_shape_perimeter(void){
+double get_perimeter(void){
 	double perimeter;
 	while (1){
 		printf("Perimeter");

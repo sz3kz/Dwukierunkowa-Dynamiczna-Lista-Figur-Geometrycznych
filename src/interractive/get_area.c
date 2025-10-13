@@ -1,6 +1,6 @@
 #include "../../include/interractive.h"
 
-double get_geometric_shape_area(void){
+double get_area(void){
 	double area;
 	while (1){
 		printf("Area");

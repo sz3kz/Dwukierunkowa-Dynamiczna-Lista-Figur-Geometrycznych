@@ -14,5 +14,8 @@
 char get_option(void);
 void show_options_usage(void);
 GeometricShape * get_geometric_data(void);
+char * get_name(void);
+double get_area(void);
+double get_perimeter(void);
 
 #endif

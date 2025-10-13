@@ -1,6 +1,6 @@
 #include "../../include/interractive.h"
 
-char * get_geometric_shape_name(void){
+char * get_name(void){
 	char * name = malloc(sizeof(char) * NAME_MAXSIZE);
 	printf("Name");
 	printf("%s", INPUT_PROMPT);

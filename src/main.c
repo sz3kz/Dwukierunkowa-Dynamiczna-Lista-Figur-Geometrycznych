@@ -17,9 +17,9 @@ int main(void){
 		switch(option){
 			case 'a':
 				puts("You chose to append a new node.");
-				char * name = get_geometric_shape_name();
-				double area = get_geometric_shape_area();
-				double perimeter = get_geometric_shape_perimeter();
+				char * name = get_name();
+				double area = get_area();
+				double perimeter = get_perimeter();
 				GeometricShape * shape = create_geometric_shape(name,area,perimeter);
 				if (current == NULL) current = create_node(shape);
 				else append_node(current, create_node(shape));
