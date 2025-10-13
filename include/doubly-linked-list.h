@@ -5,13 +5,15 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+#include "./geometric-shape-struct.h"
+
 typedef struct Node {
 	struct Node * prev;
 	struct Node * next;
-	int data;
+	GeometricShape data;
 } Node;
 
-Node * create_node(int data);
+Node * create_node(char * name, double area, double perimeter);
 void delete_node(Node * current, Node ** current_ptr);
 void print_node(Node * node, bool is_current);
 
