@@ -1,4 +1,4 @@
-#include "../../include/doubly-linked-list.h"
+#include "../../include/list.h"
 
 void print_node(Node * node, bool is_current){
 	if (is_current){

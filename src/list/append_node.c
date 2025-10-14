@@ -1,4 +1,4 @@
-#include "../../include/doubly-linked-list.h"
+#include "../../include/list.h"
 
 void append_node(Node * current, Node * new){
 	Node * next = current->next;

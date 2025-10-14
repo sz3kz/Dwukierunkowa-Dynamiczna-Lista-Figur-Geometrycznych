@@ -1,4 +1,4 @@
-#include "../../include/doubly-linked-list.h"
+#include "../../include/list.h"
 #include "../../include/shape.h"
 
 void delete_node(Node * current, Node ** current_ptr){

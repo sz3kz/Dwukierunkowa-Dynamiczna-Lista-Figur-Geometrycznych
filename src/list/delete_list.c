@@ -1,4 +1,4 @@
-#include "../../include/doubly-linked-list.h"
+#include "../../include/list.h"
 
 void delete_list(Node * current){
 	if (current == NULL){

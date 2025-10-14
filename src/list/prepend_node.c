@@ -1,4 +1,4 @@
-#include "../../include/doubly-linked-list.h"
+#include "../../include/list.h"
 
 void prepend_node(Node * current, Node * new){
 	Node * previous = current->prev;

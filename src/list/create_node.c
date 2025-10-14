@@ -1,4 +1,4 @@
-#include "../../include/doubly-linked-list.h"
+#include "../../include/list.h"
 
 Node * create_node(GeometricShape * data){
 	Node * ptr = malloc(sizeof(Node));
