@@ -7,9 +7,6 @@ int main(void){
 	Node * current = NULL;
 	Node * tmp;
 	char option;
-	char * name;
-	double area;
-	double perimeter;
 	Shape * shape;
 	while (1){
 		system("clear");
@@ -22,19 +19,19 @@ int main(void){
 		switch(option){
 			case 'a':
 				puts("You chose to append a new node.");
-				name = get_name();
-				area = get_area();
-				perimeter = get_perimeter();
-				shape = create_shape(name,area,perimeter);
+				shape = create_shape(
+						get_perimeter(),
+						get_area(),
+						get_name());
 				if (current == NULL) current = create_node(shape);
 				else append_node(current, create_node(shape));
 				break;
 			case 'p':
 				puts("You chose to prepend a new node.");
-				name = get_name();
-				area = get_area();
-				perimeter = get_perimeter();
-				shape = create_shape(name,area,perimeter);
+				shape = create_shape(
+						get_perimeter(),
+						get_area(),
+						get_name());
 				if (current == NULL) current = create_node(shape);
 				else prepend_node(current, create_node(shape));
 				break;
