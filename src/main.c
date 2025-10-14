@@ -9,12 +9,13 @@ int main(void){
 	char option;
 	Shape * shape;
 	while (1){
-		system("clear");
+		CLEAR_SCREEN;
+
 		print_list(current);
 		show_options_usage();
 
 		option = get_option();
-		system("clear");
+		CLEAR_SCREEN;
 
 		switch(option){
 			case 'a':

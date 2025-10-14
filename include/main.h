@@ -4,4 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define CLEAR_SCREEN system("clear")
+
 #endif
