@@ -25,7 +25,7 @@ int main(void){
 				name = get_name();
 				area = get_area();
 				perimeter = get_perimeter();
-				shape = create_geometric_shape(name,area,perimeter);
+				shape = create_shape(name,area,perimeter);
 				if (current == NULL) current = create_node(shape);
 				else append_node(current, create_node(shape));
 				break;
@@ -34,7 +34,7 @@ int main(void){
 				name = get_name();
 				area = get_area();
 				perimeter = get_perimeter();
-				shape = create_geometric_shape(name,area,perimeter);
+				shape = create_shape(name,area,perimeter);
 				if (current == NULL) current = create_node(shape);
 				else prepend_node(current, create_node(shape));
 				break;

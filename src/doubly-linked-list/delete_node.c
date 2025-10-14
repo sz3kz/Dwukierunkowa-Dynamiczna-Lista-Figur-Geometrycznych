@@ -10,7 +10,7 @@ void delete_node(Node * current, Node ** current_ptr){
 	if (next != NULL){
 		next->prev = prev;
 	}
-	delete_geometric_shape(current->data);
+	delete_shape(current->data);
 	free(current);
 	*(current_ptr) = NULL;
 }
