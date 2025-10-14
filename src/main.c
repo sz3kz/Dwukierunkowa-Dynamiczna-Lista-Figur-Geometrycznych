@@ -10,7 +10,7 @@ int main(void){
 	char * name;
 	double area;
 	double perimeter;
-	GeometricShape * shape;
+	Shape * shape;
 	while (1){
 		system("clear");
 		print_list(current);

@@ -1,7 +1,7 @@
 #include "../../include/shape.h"
 
-GeometricShape * create_shape(char * name, double area, double perimeter){
-	GeometricShape * shape = malloc(sizeof(GeometricShape));
+Shape * create_shape(char * name, double area, double perimeter){
+	Shape * shape = malloc(sizeof(Shape));
 	shape->name = name;
 	shape->area = area;
 	shape->perimeter = perimeter;

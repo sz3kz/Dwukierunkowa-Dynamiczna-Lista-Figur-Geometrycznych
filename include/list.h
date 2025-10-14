@@ -10,10 +10,10 @@
 typedef struct Node {
 	struct Node * prev;
 	struct Node * next;
-	GeometricShape * data;
+	Shape * data;
 } Node;
 
-Node * create_node(GeometricShape * data);
+Node * create_node(Shape * data);
 void delete_node(Node * current, Node ** current_ptr);
 void print_node(Node * node, bool is_current);
 
