@@ -23,6 +23,7 @@ int main(void){
 						get_perimeter(),
 						get_area(),
 						get_name());
+				while( getchar() != '\n' && getchar() != EOF);
 				if (current == NULL) current = create_node(shape);
 				else append_node(current, create_node(shape));
 				break;
@@ -32,6 +33,7 @@ int main(void){
 						get_perimeter(),
 						get_area(),
 						get_name());
+				while( getchar() != '\n' && getchar() != EOF);
 				if (current == NULL) current = create_node(shape);
 				else prepend_node(current, create_node(shape));
 				break;
