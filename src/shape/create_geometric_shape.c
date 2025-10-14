@@ -1,4 +1,4 @@
-#include "../../include/geometric-shape-struct.h"
+#include "../../include/shape.h"
 
 GeometricShape * create_geometric_shape(char * name, double area, double perimeter){
 	GeometricShape * shape = malloc(sizeof(GeometricShape));

@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-#include "./geometric-shape-struct.h"
+#include "./shape.h"
 
 typedef struct Node {
 	struct Node * prev;

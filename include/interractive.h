@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-#include "./geometric-shape-struct.h"
+#include "./shape.h"
 
 #define VALID_OPTIONS "apdnbx"
 #define INPUT_PROMPT ": "

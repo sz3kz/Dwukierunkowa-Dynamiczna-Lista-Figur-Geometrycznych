@@ -1,5 +1,5 @@
-#ifndef GEOMETRIC_SHAPE_STRUCT_H
-#define GEOMETRIC_SHAPE_STRUCT_H
+#ifndef SHAPE_H
+#define SHAPE_H
 
 #include <stdlib.h>
 

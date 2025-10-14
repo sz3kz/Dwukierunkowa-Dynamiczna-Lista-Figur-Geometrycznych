@@ -1,6 +1,6 @@
 #include "../include/main.h"
 #include "../include/doubly-linked-list.h"
-#include "../include/geometric-shape-struct.h"
+#include "../include/shape.h"
 #include "../include/interractive.h"
 
 int main(void){

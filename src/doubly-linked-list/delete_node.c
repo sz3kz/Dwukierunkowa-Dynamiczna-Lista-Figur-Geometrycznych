@@ -1,5 +1,5 @@
 #include "../../include/doubly-linked-list.h"
-#include "../../include/geometric-shape-struct.h"
+#include "../../include/shape.h"
 
 void delete_node(Node * current, Node ** current_ptr){
 	Node * prev = current->prev;
