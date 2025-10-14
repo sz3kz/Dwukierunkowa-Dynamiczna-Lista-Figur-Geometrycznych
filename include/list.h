@@ -14,7 +14,7 @@ typedef struct Node {
 } Node;
 
 Node * create_node(Shape * data);
-void delete_node(Node * current, Node ** current_ptr);
+void delete_node(Node * current);
 void print_node(Node * node, bool is_current);
 
 void append_node(Node * current, Node * new);
