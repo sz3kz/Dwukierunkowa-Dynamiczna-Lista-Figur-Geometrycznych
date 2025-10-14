@@ -66,6 +66,7 @@ int main(void){
 				break;
 			case 'x':
 				puts("You chose to exit the program.");
+				delete_list(current);
 				return 0;
 			default:
 				puts("Option error.");
