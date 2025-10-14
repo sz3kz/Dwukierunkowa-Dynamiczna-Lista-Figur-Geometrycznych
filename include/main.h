@@ -5,5 +5,6 @@
 #include <stdlib.h>
 
 #define CLEAR_SCREEN system("clear")
+#define EMPTY_STDIN while( getchar() != '\n' && getchar() != EOF)
 
 #endif
