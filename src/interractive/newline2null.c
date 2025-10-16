@@ -1,9 +1,9 @@
 #include "../../include/interractive.h"
 
 void newline2null(char * string){
-	for (int iterator = 0; string[iterator] != 0; ++iterator){
-		if (string[iterator] == '\n'){
-			string[iterator] = 0;
+	for (int i = 0; string[i] != 0; ++i){
+		if (string[i] == '\n'){
+			string[i] = 0;
 			break;
 		}
 	}
