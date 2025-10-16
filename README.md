@@ -10,8 +10,8 @@ Powinności kodu:
   * instrukcja dołączania nowego elementu
     * implementacja pozyskiwania od użytkownika tekstu
     * implementacja pozyskiwania od użytkownika liczby
-  * instrukcja zmiany aktualnie wybranego elementu
   * instrukcja usuwania aktualnie wybranego elementu
+  * instrukcja do zmiany wybranego elementu
 ## Narzędzia
 ```
 Język programowania: C
