@@ -1,6 +1,9 @@
 #include "../../include/interractive.h"	
 
 char get_option(void){
+	/* Prompts the user for a "option" character, returns it.
+	 * The charcode has to be found inside the VALID_OPTIONS string.
+	 * Loops prompting untill it receives a valid character option.*/
 	bool is_valid = 0;
 	char option = 0;
 	while (1){
