@@ -1,6 +1,7 @@
 #include "../../include/list.h"
 
 void print_node(Node * node, bool is_current){
+	/* Print the node's shape data in a human-friendly format.*/
 	if (is_current){
 		printf(	" * Shape:\n"
 			"	Name: \"%s\"\n"
