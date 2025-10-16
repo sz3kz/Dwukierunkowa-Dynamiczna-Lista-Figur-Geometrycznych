@@ -6,7 +6,7 @@ double get_perimeter(void){
 		printf("Perimeter");
 		printf("%s", INPUT_PROMPT);
 		scanf("%lf", &perimeter);
-		if (perimeter> 0) break;
+		if (perimeter > 0) break;
 		printf("Perimeter must be a positive double value!\n");
 	}
 	return perimeter;
