@@ -1,10 +1,11 @@
 #include "../../include/interractive.h"	
 
 void show_options_usage(void){
+	char option;
 	printf("Options:\n");
-	for (int iterator = 0; VALID_OPTIONS[iterator] != 0; ++iterator){
-		char current_option = VALID_OPTIONS[iterator];
-		switch(current_option){
+	for (int i = 0; VALID_OPTIONS[i] != 0; ++i){
+		option = VALID_OPTIONS[i];
+		switch(option){
 			case 'a':
 				printf("	\"a\" - create new node and (a)ppend it to the current node.\n");
 				break;
@@ -24,7 +25,7 @@ void show_options_usage(void){
 				printf("	\"x\" - quit the program.\n");
 				break;
 			default:
-				printf("Option: \"%c\" has no implementation!\n",current_option);
+				printf("Option: \"%c\" has no implementation!\n",option);
 				break;
 		}
 	}
