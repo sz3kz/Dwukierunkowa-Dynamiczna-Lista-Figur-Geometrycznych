@@ -1,2 +1,2 @@
 build:
-	gcc -std=c11 -o bin/main src/main.c src/*/*
+	gcc -std=c11 -o main.out src/main.c src/*/*
