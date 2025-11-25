@@ -12,6 +12,15 @@ Powinności kodu:
     * implementacja pozyskiwania od użytkownika liczby
   * instrukcja usuwania aktualnie wybranego elementu
   * instrukcja do zmiany wybranego elementu
+## Jak zbudować?
+
+```bash
+cd Prosty-Kalkulator/
+```
+```bash
+mkdir build && make
+```
+Binarka programu będzie znajdować się w 'build'.
 ## Narzędzia
 ```
 Język programowania: C
