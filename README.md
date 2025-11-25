@@ -15,7 +15,7 @@ Powinności kodu:
 ## Jak zbudować?
 
 ```bash
-cd Prosty-Kalkulator/
+cd Dwukierunkowa-Dynamiczna-Lista-Figur-Geometrycznych-main/
 ```
 ```bash
 mkdir build && make
